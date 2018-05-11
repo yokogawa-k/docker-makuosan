@@ -57,7 +57,7 @@ sync-delete-file-test:
 	docker-compose exec node02 ls -l /var/www/
 
 define yellowecho
-      @tput setaf 3
+      @tput -T xterm setaf 3
       @echo $1
-      @tput sgr0
+      @tput -T xterm sgr0
 endef
