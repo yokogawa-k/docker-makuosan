@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  node01:
+    build: .
+    image: yokogawa/makuosan
+    hostname: node01
+  node02:
+    build: .
+    image: yokogawa/makuosan
+    hostname: node02
+  node03:
+    build: .
+    image: yokogawa/makuosan
+    hostname: node03
+
