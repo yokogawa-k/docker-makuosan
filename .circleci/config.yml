@@ -6,9 +6,10 @@ jobs:
     steps:
       - checkout
       - run:
-    name: build image
-    command: |
-      make build
-    name: running test 
-    command: |
-      make test
+          name: build image
+          command: |
+            make build
+      - run:
+          name: running test 
+          command: |
+            make test
